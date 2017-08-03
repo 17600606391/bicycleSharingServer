@@ -104,23 +104,23 @@
                 </div>
             </div>
             <!--车辆地图-->
-      <%--      <li class="sidebar-nav-link">
-                <a href="javascript:;" class="sidebar-nav-sub-title">
-                    <i class="am-icon-map sidebar-nav-link-logo"></i> 地图查看
-                    <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
-                </a>
-                <ul class="sidebar-nav sidebar-nav-sub">--%>
-                    <div class="row am-cf">
-                        <div class="am-u-sm-12 am-u-md-12">
-                            <div class="widget am-cf">
-                                <div id="container" style="width: auto;height: 500px;">
-                                    <script language="JavaScript" src="assets/js/map.js"></script>
-                                </div>
-                            </div>
+            <%--      <li class="sidebar-nav-link">
+                      <a href="javascript:;" class="sidebar-nav-sub-title">
+                          <i class="am-icon-map sidebar-nav-link-logo"></i> 地图查看
+                          <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                      </a>
+                      <ul class="sidebar-nav sidebar-nav-sub">--%>
+            <div class="row am-cf">
+                <div class="am-u-sm-12 am-u-md-12">
+                    <div class="widget am-cf">
+                        <div id="container" style="width: auto;height: 500px;">
+                            <script language="JavaScript" src="assets/js/map.js"></script>
                         </div>
                     </div>
-             <%--   </ul>
-            </li>--%>
+                </div>
+            </div>
+            <%--   </ul>
+           </li>--%>
         </div>
         <div class="am-u-sm-12 am-u-md-12 am-u-lg-8 widget-margin-bottom-lg">
             <div class="widget am-cf widget-body-lg">

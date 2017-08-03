@@ -89,8 +89,8 @@ public class BicycleServiceTest {
     @Test
     public void getBicycleCurrentYByStatement() throws Exception {
         Double[] y=bicycleService.getBicycleCurrentYByStatement(1);
-        for (int i = 0; i <y.length ; i++) {
-            System.out.println(y[i]);
+        for (double m:y) {
+            System.out.println(m);
         }
     }
 }

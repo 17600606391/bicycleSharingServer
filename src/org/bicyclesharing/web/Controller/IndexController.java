@@ -55,18 +55,12 @@ public class IndexController {
         //绿色车辆数量
         requestMap.put("bicycleCountGreen", bicycleService.getBicycleCountByStatement(1));
         //今日消费金额
-        requestMap.put("borrowCost",borrowService.getBorrowCost());
+        requestMap.put("borrowCost", borrowService.getBorrowCost());
         //今日用户充值金额
-        requestMap.put("rechargeCount",rechargeService.getRechargeCount());
+        requestMap.put("rechargeCount", rechargeService.getRechargeCount());
         //管理员通知
         ArrayList<AdminMessage> adminMessages = (ArrayList<AdminMessage>) adminService.getAllAdminMessage();
         requestMap.put("adminMessages", adminMessages);
-        /*//绿色车辆的经度和纬度
-        requestMap.put("greenBicycleCurrentX",bicycleService.getBicycleCurrentXByStatement(1));
-        requestMap.put("greenBicycleCurrentY",bicycleService.getBicycleCurrentYByStatement(1));
-        //红色车辆的经度和纬度
-        requestMap.put("redBicycleCurrentX",bicycleService.getBicycleCurrentXByStatement(-1));
-        requestMap.put("redBicycleCurrentY",bicycleService.getBicycleCurrentYByStatement(-1));*/
         return "index/index_content";
     }
 
