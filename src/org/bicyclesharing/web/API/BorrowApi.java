@@ -2,6 +2,7 @@ package org.bicyclesharing.web.API;
 
 
 import org.bicyclesharing.entities.Bicycle;
+import org.bicyclesharing.entities.Borrow;
 import org.bicyclesharing.entities.User;
 import org.bicyclesharing.service.BicycleService;
 import org.bicyclesharing.service.BorrowService;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -63,5 +65,15 @@ public class BorrowApi {
         userService.editUser(user.getUserName(),user.getUserAccount(),user.getUserCredit(),user.getUserCash());
         bicycleService.editBicycyle(bicycleId,ex,ey,1);
         return "1";
+    }
+
+    /**
+     * 3.查询借车记录api
+     */
+    @RequestMapping(value = "api-borrow-queryBorrow/{userName}")
+    @ResponseBody
+    public ArrayList<Borrow> queryBorrow(@PathVariable("userName") String userName){
+        ArrayList<Borrow> borrows= (ArrayList<Borrow>) borrowService.getBorrowByUserId(userService.getUserByName(userName).getUserId());
+        return borrows;
     }
 }

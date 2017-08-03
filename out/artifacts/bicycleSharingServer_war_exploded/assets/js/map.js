@@ -5,10 +5,10 @@ var map = new AMap.Map('container', {
 });
 
 // 请求地址
-var greenX = 'http://localhost:8080/api-bicycle-getX/1';
-var greenY = 'http://localhost:8080/api-bicycle-getY/1';
-var redX = 'http://localhost:8080/api-bicycle-getX/-1';
-var redY = 'http://localhost:8080/api-bicycle-getY/-1';
+var greenX = 'http://192.168.32.73:8080/api-bicycle-getX/1';
+var greenY = 'http://192.168.32.73:8080/api-bicycle-getY/1';
+var redX = 'http://192.168.32.73:8080/api-bicycle-getX/-1';
+var redY = 'http://192.168.32.73:8080/api-bicycle-getY/-1';
 
 // 保存数据的变量
 var greenBicycleCurrentX,greenBicycleCurrentY;
