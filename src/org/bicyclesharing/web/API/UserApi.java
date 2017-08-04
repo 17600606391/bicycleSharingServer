@@ -103,7 +103,7 @@ public class UserApi {
      */
     @RequestMapping(value = "api-user-queryrecharge/{userName}")
     @ResponseBody
-    public ArrayList<Recharge> getRechargeByUserId(@PathVariable("userName") String  userName) {
+    public ArrayList<Recharge> getRechargeByUserId(@PathVariable("userName") String userName) {
         User user = userService.getUserByName(userName);
         ArrayList<Recharge> recharges = (ArrayList<Recharge>) rechargeService.getRechargeByUserId(user.getUserId());
         return recharges;
@@ -116,10 +116,20 @@ public class UserApi {
     @ResponseBody
     public String Recharge(@PathVariable("rechargeAmount") BigDecimal rechargeAmount, @PathVariable("userName") String userName) {
         User user = userService.getUserByName(userName);
+        //修改用户余额
         user.setUserAccount(user.getUserAccount().add(rechargeAmount));
         userService.editUser(user.getUserName(), user.getUserAccount(), user.getUserCredit(), user.getUserCash());
+        //记录充值记录
         rechargeService.addRecharge(user.getUserId(), rechargeAmount, user.getUserAccount(), new Date());
         return "1";
     }
 
+    /**
+     * 8.用户信息api
+     */
+    @RequestMapping(value = "api-user-userInfo/{userName}")
+    @ResponseBody
+    public User getUserInfo(@PathVariable("userName") String userName) {
+        return userService.getUserByName(userName);
+    }
 }
