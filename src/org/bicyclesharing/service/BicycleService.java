@@ -66,7 +66,7 @@ public interface BicycleService {
      * 8.修改指定单车信息
      * @return
      */
-    Boolean editBicycyle(Integer id,double bicycleCurrentX, double bicycleCurrentY,Integer bicycleStatement);
+    Boolean editBicycyle(Integer id,double bicycleCurrentX, double bicycleCurrentY,Date bicycleLastTime,Integer bicycleStatement);
 
     /**
      * 9.获取单车数量

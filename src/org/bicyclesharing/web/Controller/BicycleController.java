@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -118,7 +119,7 @@ public class BicycleController {
 
     @RequestMapping(value = "admin-bicycle-editbicycle-execute", method = RequestMethod.POST)
     public String editBicycleExecute(@RequestParam("id") Integer id, @RequestParam("bicycleCurrentX") Double bicycleCurrentX, @RequestParam("bicycleCurrentY") Double bicycleCurrentY, @RequestParam("bicycleStatement") Integer bicycleStatement) {
-        bicycleService.editBicycyle(id, bicycleCurrentX, bicycleCurrentY, bicycleStatement);
+        bicycleService.editBicycyle(id, bicycleCurrentX, bicycleCurrentY,new Date(), bicycleStatement);
         return "redirect:/admin-bicycle-list-show?page=1";
     }
 

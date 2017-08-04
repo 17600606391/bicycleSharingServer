@@ -78,8 +78,8 @@ public class BicycleServiceImpl implements BicycleService {
     }
 
     @Override
-    public Boolean editBicycyle(Integer id, double bicycleCurrentX, double bicycleCurrentY, Integer bicycleStatement) {
-        if (id == null || "".equals(bicycleCurrentX) || "".equals(bicycleCurrentY) || "".equals(bicycleStatement)) {
+    public Boolean editBicycyle(Integer id, double bicycleCurrentX, double bicycleCurrentY,Date bicycleLastTime, Integer bicycleStatement) {
+        if (id == null || "".equals(bicycleCurrentX) || "".equals(bicycleCurrentY) ||bicycleLastTime==null|| "".equals(bicycleStatement)) {
             return false;
         } else {
             Bicycle bicycle = bicycleDao.selectBicycleById(id);
@@ -88,6 +88,7 @@ public class BicycleServiceImpl implements BicycleService {
             } else {
                 bicycle.setBicycleCurrentX(bicycleCurrentX);
                 bicycle.setBicycleCurrentY(bicycleCurrentY);
+                bicycle.setBicycleLastTime(bicycleLastTime);
                 bicycle.setBicycleStatement(bicycleStatement);
                 bicycleDao.updateBicycle(bicycle);
                 return true;

@@ -66,7 +66,7 @@ public class BicycleServiceTest {
 
     @Test
     public void editBicycyle() throws Exception {
-        System.out.println(bicycleService.editBicycyle(15,23.2,43.2,1));
+        System.out.println(bicycleService.editBicycyle(15,23.2,43.2,new Date(),1));
     }
 
     @Test

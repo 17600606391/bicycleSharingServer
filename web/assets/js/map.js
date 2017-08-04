@@ -5,10 +5,11 @@ var map = new AMap.Map('container', {
 });
 
 // 请求地址
-var greenX = 'http://192.168.32.73:8080/api-bicycle-getX/1';
-var greenY = 'http://192.168.32.73:8080/api-bicycle-getY/1';
-var redX = 'http://192.168.32.73:8080/api-bicycle-getX/-1';
-var redY = 'http://192.168.32.73:8080/api-bicycle-getY/-1';
+var url='http://192.168.32.73:8080/';
+var greenX = url+'api-bicycle-getX/1';
+var greenY = url+'api-bicycle-getY/1';
+var redX = url+'api-bicycle-getX/-1';
+var redY = url+'api-bicycle-getY/-1';
 
 // 保存数据的变量
 var greenBicycleCurrentX,greenBicycleCurrentY;
@@ -36,7 +37,7 @@ Ajax(redX, function(res) {
 function initGreen() {
     for (var i = 0; i < greenBicycleCurrentX.length; i++) {
         marker = new AMap.Marker({
-            icon: "../img/greenBicycle.png",
+            icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
             position: [greenBicycleCurrentX[i], greenBicycleCurrentY[i]]
         });
         marker.setMap(map);
