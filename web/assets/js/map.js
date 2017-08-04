@@ -36,7 +36,7 @@ Ajax(redX, function(res) {
 function initGreen() {
     for (var i = 0; i < greenBicycleCurrentX.length; i++) {
         marker = new AMap.Marker({
-            icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+            icon: "../img/greenBicycle.png",
             position: [greenBicycleCurrentX[i], greenBicycleCurrentY[i]]
         });
         marker.setMap(map);

@@ -55,6 +55,11 @@ public class BorrowServiceTest {
     }
 
     @Test
+    public void getBorrowLastByBicycleId() throws Exception {
+        System.out.println(borrowService.getBorrowLastByBicycleId(1));
+    }
+
+    @Test
     public void getBorrowByUserId() throws Exception {
         List<Borrow> borrowList = borrowService.getBorrowByUserId(1);
         for (Borrow borrow : borrowList) {
@@ -65,5 +70,10 @@ public class BorrowServiceTest {
     @Test
     public void getBorrowCost() throws Exception {
         System.out.println(borrowService.getBorrowCost());
+    }
+
+    @Test
+    public void editBorrow() throws Exception {
+        System.out.println(borrowService.editBorrow(1,new Date(),118.642373, 32.036999,new BigDecimal(2.00),new BigDecimal(11.00)));
     }
 }

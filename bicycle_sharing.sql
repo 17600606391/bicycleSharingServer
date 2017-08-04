@@ -176,15 +176,16 @@ ALTER TABLE recharge
   MODIFY recharge_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '管理员通知id',
   AUTO_INCREMENT = 10;
-/*-- 11.创建用户反馈表
+-- 11.创建用户反馈表
 CREATE TABLE user_feedback(
   feedback_id INT(11) NOT NULL AUTO_INCREMENT COMMENT '反馈id',
   feedback_title VARCHAR(64) NOT NULL COMMENT '反馈标题',
   feedback_content VARCHAR(64) NOT NULL COMMENT '反馈内容',
   user_id INT(11) NOT NULL COMMENT '用户id',
+  bicycle_id INT(11) NOT NULL COMMENT '车辆id',
   feedback_time TIMESTAMP NOT NULL COMMENT '反馈时间',
   feedback_statement INT(11) NOT NULL COMMENT '状态',
   PRIMARY KEY (feedback_id)
 )ENGINE = InnoDB
   DEFAULT CHARSET = utf8
-COMMENT '用户反馈表'*/
+COMMENT '用户反馈表'

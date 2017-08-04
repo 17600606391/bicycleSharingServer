@@ -34,13 +34,17 @@ public class BorrowApi {
     /**
      * 1.借车开始api,修改单车状况
      */
-    @RequestMapping(value="api-borrow-borrowBicycle/{bicycleId}")
+    @RequestMapping(value="api-borrow-borrowBicycle/{bicycleId}/{userName}/{sx}/{sy}")
     @ResponseBody
-    public String borrowBicycle(@PathVariable("bicycleId") Integer bicycleId){
+    public String borrowBicycle(@PathVariable("bicycleId") Integer bicycleId,@PathVariable("userName") String userName,
+                                @PathVariable("sx") double sx,  @PathVariable("sy") double sy){
         Bicycle bicycle=bicycleService.getBicycleById(bicycleId);
         if (bicycle.getBicycleStatement()==1||bicycle.getBicycleStatement()==-1){
+            //修改单车状况
             bicycle.setBicycleStatement(0);
             bicycleService.editBicycyle(bicycleId,bicycle.getBicycleCurrentX(),bicycle.getBicycleCurrentY(),bicycle.getBicycleStatement());
+            //添加借车记录(车id,用户名,当前时间,开始地址)
+            borrowService.addBorrow(bicycleId,userService.getUserByName(userName).getUserId(),new Date(),null,sx,sy,null,null,null,null);
             return "1";
         }else{
             return "0";
@@ -51,18 +55,19 @@ public class BorrowApi {
      * 2.借车结束相关api,添加借车记录,修改用户余额,修改单车状况为1(还有地址)
      * @return
      */
-    @RequestMapping(value = "api-borrow-returnBicycle/{stime}/{etime}/{sx}/{sy}/{ex}/{ey}/{cost}/{bicycleId}/{userName}")
+    @RequestMapping(value = "api-borrow-returnBicycle/{bicycleId}/{userName}/{ex}/{ey}/{cost}")
     @ResponseBody
-    public String returnBicycle( @PathVariable("stime") Date stime,  @PathVariable("etime") Date etime,
-                                 @PathVariable("sx") double sx,  @PathVariable("sy") double sy,
-                                 @PathVariable("ex") double ex,  @PathVariable("sy") double ey,
-                                 @PathVariable("cost") BigDecimal cost,
-                                 @PathVariable("bicycleId") Integer bicycleId, @PathVariable("userName") String  userName) {
+    public String returnBicycle( @PathVariable("bicycleId") Integer bicycleId,@PathVariable("userName") String userName,
+                                 @PathVariable("ex") double ex,  @PathVariable("ey") double ey,
+                                 @PathVariable("cost") BigDecimal cost) {
+        //用户的余额减少
         User user=userService.getUserByName(userName);
         BigDecimal remaing=user.getUserAccount();
-        borrowService.addBorrow(bicycleId,user.getUserId(),stime,etime,sx,sy,ex,ey,cost,remaing.subtract(cost));
         user.setUserAccount(remaing.subtract(cost));
         userService.editUser(user.getUserName(),user.getUserAccount(),user.getUserCredit(),user.getUserCash());
+        //完善租借记录
+        borrowService.editBorrow(bicycleId,new Date(),ex,ey,cost,remaing.subtract(cost));
+        //修改车辆状况
         bicycleService.editBicycyle(bicycleId,ex,ey,1);
         return "1";
     }

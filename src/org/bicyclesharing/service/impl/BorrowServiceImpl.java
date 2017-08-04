@@ -22,10 +22,10 @@ public class BorrowServiceImpl implements BorrowService {
 
     @Override
     public boolean addBorrow(Integer bicycleId, Integer userId, Date borrowStartTime, Date borrowEndTime, Double borrowStartX, Double borrowStartY, Double borrowEndX, Double borrowEndY, BigDecimal cost, BigDecimal remaining) {
-        if ("".equals(bicycleId)||"".equals(userId)||"".equals(borrowStartTime)||"".equals(borrowEndTime)||"".equals(borrowStartX)||"".equals(borrowStartY)||"".equals(borrowEndX)||"".equals(borrowEndY)||"".equals(cost)||"".equals(remaining)) {
+        if ("".equals(bicycleId) || "".equals(userId) || "".equals(borrowStartTime) || "".equals(borrowEndTime) || "".equals(borrowStartX) || "".equals(borrowStartY) || "".equals(borrowEndX) || "".equals(borrowEndY) || "".equals(cost) || "".equals(remaining)) {
             return false;
         } else {
-            Borrow borrow=new Borrow(bicycleId,userId,borrowStartTime,borrowEndTime,borrowStartX,borrowStartY,borrowEndX,borrowEndY,cost,remaining);
+            Borrow borrow = new Borrow(bicycleId, userId, borrowStartTime, borrowEndTime, borrowStartX, borrowStartY, borrowEndX, borrowEndY, cost, remaining);
             borrowDao.insertBorrow(borrow);
             return true;
         }
@@ -52,6 +52,11 @@ public class BorrowServiceImpl implements BorrowService {
     }
 
     @Override
+    public Borrow getBorrowLastByBicycleId(Integer bicycleId) {
+        return borrowDao.selectBorrowLastByBicycleId(bicycleId);
+    }
+
+    @Override
     public List<Borrow> getBorrowByUserId(Integer userId) {
         return borrowDao.selectBorrowByUserId(userId);
     }
@@ -60,4 +65,26 @@ public class BorrowServiceImpl implements BorrowService {
     public BigDecimal getBorrowCost() {
         return borrowDao.selectBorrowCost();
     }
+
+    @Override
+    public boolean editBorrow(Integer bicycleId, Date borrowEndTime, Double borrowEndX, Double borrowEndY, BigDecimal cost, BigDecimal remaining) {
+        if (bicycleId == null || borrowEndTime == null || borrowEndX == null || borrowEndY == null || cost == null || remaining == null) {
+            return false;
+        } else {
+            Borrow borrow = borrowDao.selectBorrowLastByBicycleId(bicycleId);
+            if (borrow == null) {
+                return false;
+            } else {
+                borrow.setBorrowEndTime(borrowEndTime);
+                borrow.setBorrowEndX(borrowEndX);
+                borrow.setBorrowEndY(borrowEndY);
+                borrow.setCost(cost);
+                borrow.setRemaining(remaining);
+                borrowDao.updateBorrow(borrow);
+                return true;
+            }
+        }
+    }
+
+
 }

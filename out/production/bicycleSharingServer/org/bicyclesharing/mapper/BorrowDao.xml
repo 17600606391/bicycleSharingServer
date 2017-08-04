@@ -31,16 +31,31 @@
         FROM borrow
         WHERE bicycle_id = #{bicycleId}
     </select>
-    <!--6.根据用户id查询租借记录-->
+    <select id="selectBorrowLastByBicycleId" parameterType="Integer" resultType="Borrow">
+        SELECT *
+        FROM borrow
+        WHERE  bicycle_id = #{bicycleId}
+        ORDER BY borrow_id DESC
+        LIMIT 0,1
+    </select>
+    <!--7.根据用户id查询租借记录-->
     <select id="selectBorrowByUserId" parameterType="Integer" resultType="Borrow">
         SELECT *
         FROM borrow
         WHERE user_id = #{userId}
     </select>
-    <!--7.获取指定日期消费总额-->
+    <!--8.获取指定日期消费总额-->
     <select id="selectBorrowCost" resultType="BigDecimal">
         SELECT sum(cost)
         FROM borrow
         WHERE DATE (borrow_end_time)=current_date
     </select>
+    <!--9.修改租借记录-->
+    <update id="updateBorrow" parameterType="Borrow">
+        UPDATE borrow
+        SET borrow_start_time=#{borrowStartTime},borrow_end_time = #{borrowEndTime},
+            borrow_end_x = #{borrowEndX},borrow_end_y = #{borrowEndY},
+            cost=#{cost},remaining=#{remaining}
+        WHERE borrow_id = #{borrowId}
+    </update>
 </mapper>

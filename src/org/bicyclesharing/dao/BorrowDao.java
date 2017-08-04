@@ -44,12 +44,13 @@ public interface BorrowDao {
     Borrow selectBorrowByBorrowId(Integer borrowId);
 
     /**
-     * 6.根据车id查询其租借记录
+     * 6.根据车id查询其租借记录(和最后一条)
      *
      * @param bicycleId
      * @return
      */
     List<Borrow> selectBorrowByBicycleId(Integer bicycleId);
+    Borrow selectBorrowLastByBicycleId(Integer bicycleId);
 
     /**
      * 7.根据用户id查询其租借记录
@@ -65,4 +66,8 @@ public interface BorrowDao {
      * @return
      */
     BigDecimal selectBorrowCost();
+    /**
+     * 9.修改租借记录
+     */
+    void updateBorrow(Borrow borrow);
 }

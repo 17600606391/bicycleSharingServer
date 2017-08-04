@@ -58,6 +58,11 @@ public class BorrowDaoTest {
     }
 
     @Test
+    public void selectBorrowLastByBicycleId() throws Exception {
+        System.out.println(borrowDao.selectBorrowLastByBicycleId(1));
+    }
+
+    @Test
     public void selectBorrowByUserId() throws Exception {
         List<Borrow> borrowList=borrowDao.selectBorrowByUserId(1);
         for (Borrow borrow:borrowList) {
@@ -69,5 +74,10 @@ public class BorrowDaoTest {
         System.out.println(borrowDao.selectBorrowCost());
     }
 
-
+    @Test
+    public void updateBorrow() throws Exception {
+        //这样修改是有问题的,starttime写null也会改,最好用set的方法,来修改,保留不需要修改的数据,当然其实也无所谓,到后面也可以做
+        Borrow borrow=new Borrow(12,1,1,null,new Date(),null,null,118.642371, 32.036997,new BigDecimal(1.00),new BigDecimal(10.00));
+        borrowDao.updateBorrow(borrow);
+    }
 }

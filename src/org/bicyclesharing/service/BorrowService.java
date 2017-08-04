@@ -37,10 +37,11 @@ public interface BorrowService {
     Borrow getBorrowById(Integer id);
 
     /**
-     * 5.根据车id查询租借记录
+     * 5.根据车id查询租借记录(和最后一条)
      * @return
      */
     List<Borrow> getBorrowByBicycleId(Integer bicycleId);
+    Borrow getBorrowLastByBicycleId(Integer bicycleId);
 
     /**
      * 6.根据用户id查询租借记录
@@ -49,5 +50,10 @@ public interface BorrowService {
     List<Borrow> getBorrowByUserId(Integer userId);
 
     BigDecimal getBorrowCost();
+
+    /**
+     * 7.修改租借记录
+     */
+    boolean editBorrow(Integer bicycleId,Date borrowEndTime,Double borrowEndX,Double borrowEndY,BigDecimal cost,BigDecimal remaining);
 
 }
