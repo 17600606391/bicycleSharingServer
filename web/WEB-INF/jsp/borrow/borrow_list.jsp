@@ -53,8 +53,8 @@
                                         <thead>
                                             <tr>
                                                 <th>序号</th>
-                                                <th>单车id</th>
-                                                <th>用户id</th>
+                                                <th>单车编号</th>
+                                                <th>用户编号</th>
                                                 <th>租借时间</th>
                                                 <th>归还时间时间</th>
                                                 <th>开始经度</th>

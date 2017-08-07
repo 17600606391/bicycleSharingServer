@@ -89,8 +89,9 @@
     <column id="28" parent="14" name="admin_message_time">
       <Position>4</Position>
       <Comment>发布时间</Comment>
-      <DataType>date|0</DataType>
+      <DataType>timestamp|0</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
     <column id="29" parent="14" name="admin_id">
       <Position>5</Position>

@@ -50,6 +50,11 @@
             </a>
         </li>
         <li class="sidebar-nav-link">
+            <a href="${pageContext.request.contextPath }/admin-feedback-list-show?page=1" id="feedback">
+                <i class="am-icon-android sidebar-nav-link-logo"></i> 用户反馈
+            </a>
+        </li>
+        <li class="sidebar-nav-link">
             <a href="javascript:;" class="sidebar-nav-sub-title">
                 <i class="am-icon-street-view sidebar-nav-link-logo"></i> 管理员
                 <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>

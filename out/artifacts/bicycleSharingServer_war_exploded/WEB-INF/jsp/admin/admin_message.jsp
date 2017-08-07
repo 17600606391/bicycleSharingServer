@@ -60,7 +60,7 @@
                                         <thead>
                                             <tr>
                                                 <th>管理员通知</th>
-                                                <th>发布者id</th>
+                                                <th>发布者编号</th>
                                                 <th>时间</th>
                                                 <th>操作</th>
                                             </tr>

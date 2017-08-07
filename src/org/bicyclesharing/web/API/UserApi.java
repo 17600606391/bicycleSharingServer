@@ -87,7 +87,7 @@ public class UserApi {
      * @param userName
      * @return
      */
-    @RequestMapping(value = "api-user-queryborrow/{userName}")
+    @RequestMapping(value = "api-user-queryBorrow/{userName}")
     @ResponseBody
     public ArrayList<Borrow> getBorrowByUserId(@PathVariable("userName") String userName) {
         User user = userService.getUserByName(userName);
@@ -101,7 +101,7 @@ public class UserApi {
      * @param userName
      * @return
      */
-    @RequestMapping(value = "api-user-queryrecharge/{userName}")
+    @RequestMapping(value = "api-user-queryRecharge/{userName}")
     @ResponseBody
     public ArrayList<Recharge> getRechargeByUserId(@PathVariable("userName") String userName) {
         User user = userService.getUserByName(userName);

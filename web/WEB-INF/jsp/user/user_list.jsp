@@ -13,7 +13,6 @@
 <head>
     <title>用户列表</title>
     <%@include file="../common/head.jsp" %>
-    <script src="assets/js/echarts.min.js"></script>
     <style>
         th {
             text-align: center;
@@ -64,7 +63,7 @@
                             <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black ">
                                 <thead>
                                 <tr>
-                                    <th>用户id</th>
+                                    <th>用户编号</th>
                                     <th>用户名</th>
                                     <th>余额</th>
                                     <th>信用度</th>
@@ -121,7 +120,6 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script type="text/javascript">
-
     $(function () {
         $("#skipBtn").on("click", function () {
             var page = $("#skipBtn > input").val();

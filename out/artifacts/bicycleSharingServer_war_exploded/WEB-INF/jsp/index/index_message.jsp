@@ -49,7 +49,7 @@
                                         </div>
                                     </div>
                                     <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">发布者id </label>
+                                        <label for="user-name" class="am-u-sm-3 am-form-label">发布者编号 </label>
                                         <div class="am-u-sm-9">
                                             <input type="text" class="tpl-form-input"  value="${adminMessage.adminId }" disabled="disabled">
                                         </div>

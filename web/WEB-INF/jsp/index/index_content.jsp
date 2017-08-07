@@ -174,6 +174,7 @@
     </div>
 </div>
 </div>
+<script src="${pageContext.request.contextPath }/assets/js/theme.js"></script>
 <script src="${pageContext.request.contextPath }/assets/js/amazeui.min.js"></script>
 <script src="${pageContext.request.contextPath }/assets/js/app.js"></script>
 </body>

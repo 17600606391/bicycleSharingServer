@@ -45,7 +45,7 @@
                                     <thead>
                                     <tr>
                                         <th>序号</th>
-                                        <th>用户id</th>
+                                        <th>用户编号</th>
                                         <th>充值金额</th>
                                         <th>账户余额</th>
                                         <th>充值时间</th>

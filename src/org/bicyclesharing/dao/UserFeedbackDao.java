@@ -2,6 +2,8 @@ package org.bicyclesharing.dao;
 
 import org.bicyclesharing.entities.UserFeedback;
 
+import java.util.List;
+
 /**
  * Created by HuiJa on 2017/8/4.
  */
@@ -11,7 +13,7 @@ public interface UserFeedbackDao {
      * @param userFeedback
      * @return
      */
-    boolean addUserFeedback(UserFeedback userFeedback);
+    boolean insertUserFeedback(UserFeedback userFeedback);
 
     /**
      * 2.删除用户反馈
@@ -33,4 +35,7 @@ public interface UserFeedbackDao {
      * @return
      */
     UserFeedback selectUserFeedbackById(Integer userFeedbackId);
+    List<UserFeedback> selectUserFeedbackByUserId(Integer userId);
+    List<UserFeedback> selectUserFeedbackByBicycleId(Integer bicycleId);
+    List<UserFeedback> selectAllUserFeedback();
 }

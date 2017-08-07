@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.annotation.Resource;
 
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -25,7 +26,7 @@ public class UserFeedbackDaoTest {
     @Test
     public void addUserFeedback() throws Exception {
         UserFeedback userFeedback=new UserFeedback(2,"开发者的伙伴太蠢","建议剥夺他的结婚权利",1,1,new Date(),0);
-        System.out.println(userFeedbackDao.addUserFeedback(userFeedback));
+        System.out.println(userFeedbackDao.insertUserFeedback(userFeedback));
     }
 
     @Test
@@ -45,4 +46,24 @@ public class UserFeedbackDaoTest {
         System.out.println(userFeedbackDao.selectUserFeedbackById(1).toString());
     }
 
+    @Test
+    public void selectUserFeedbackByUserId() throws Exception {
+        List<UserFeedback> userFeedbackList=userFeedbackDao.selectUserFeedbackByUserId(1);
+        for (UserFeedback userFeedback:userFeedbackList) {
+            System.out.println(userFeedback);
+        }
+    }
+    @Test
+    public void selectUserFeedbackByBicycleId() throws Exception {
+        List<UserFeedback> userFeedbackList=userFeedbackDao.selectUserFeedbackByBicycleId(1);
+        for (UserFeedback userFeedback:userFeedbackList) {
+            System.out.println(userFeedback);
+        }
+    }@Test
+    public void selectAllUserFeedback() throws Exception {
+        List<UserFeedback> userFeedbackList=userFeedbackDao.selectAllUserFeedback();
+        for (UserFeedback userFeedback:userFeedbackList) {
+            System.out.println(userFeedback);
+        }
+    }
 }

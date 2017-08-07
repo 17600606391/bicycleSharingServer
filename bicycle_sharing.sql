@@ -10,11 +10,9 @@ CREATE DATABASE bicycle_sharing;
 -- 2.创建用户表user
 CREATE TABLE user (
   user_id       INT(11)     NOT NULL
-  COMMENT '用户手机号',
+  COMMENT '用户id',
   user_name     VARCHAR(64) NOT NULL
-  COMMENT '昵称',
-  user_password VARCHAR(32) NOT NULL
-  COMMENT '密码',
+  COMMENT '用户手机号',
   user_account  DECIMAL(9, 2) DEFAULT 0
   COMMENT '余额',
   user_credit   INT           DEFAULT 80
@@ -59,7 +57,7 @@ CREATE TABLE admin_message (
   COMMENT '管理员通知标题',
   admin_message_content TEXT         NOT NULL
   COMMENT '管理员通知内容',
-  admin_message_time    DATE         NOT NULL
+  admin_message_time    TIMESTAMP     NOT NULL
   COMMENT '发布时间',
   admin_id              INT(11)      NOT NULL
   COMMENT '发布管理员id',
@@ -177,15 +175,23 @@ ALTER TABLE recharge
   COMMENT '管理员通知id',
   AUTO_INCREMENT = 10;
 -- 11.创建用户反馈表
-CREATE TABLE user_feedback(
-  feedback_id INT(11) NOT NULL AUTO_INCREMENT COMMENT '反馈id',
-  feedback_title VARCHAR(64) NOT NULL COMMENT '反馈标题',
-  feedback_content VARCHAR(64) NOT NULL COMMENT '反馈内容',
-  user_id INT(11) NOT NULL COMMENT '用户id',
-  bicycle_id INT(11) NOT NULL COMMENT '车辆id',
-  feedback_time TIMESTAMP NOT NULL COMMENT '反馈时间',
-  feedback_statement INT(11) NOT NULL COMMENT '状态',
+CREATE TABLE user_feedback (
+  feedback_id        INT(11)     NOT NULL AUTO_INCREMENT
+  COMMENT '反馈id',
+  feedback_title     VARCHAR(64) NOT NULL
+  COMMENT '反馈标题',
+  feedback_content   VARCHAR(64) NOT NULL
+  COMMENT '反馈内容',
+  user_id            INT(11)     NOT NULL
+  COMMENT '用户id',
+  bicycle_id         INT(11)     NOT NULL
+  COMMENT '车辆id',
+  feedback_time      DATETIME    NOT NULL
+  COMMENT '反馈时间',
+  feedback_statement INT(11)     NOT NULL
+  COMMENT '状态',
   PRIMARY KEY (feedback_id)
-)ENGINE = InnoDB
+)
+  ENGINE = InnoDB
   DEFAULT CHARSET = utf8
-COMMENT '用户反馈表'
+  COMMENT '用户反馈表'

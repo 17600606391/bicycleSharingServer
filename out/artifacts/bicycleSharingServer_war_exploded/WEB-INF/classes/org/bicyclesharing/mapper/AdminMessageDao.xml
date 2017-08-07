@@ -13,6 +13,7 @@
         SELECT *
         FROM admin_message m, admin a
         WHERE m.admin_id = a.admin_id
+        ORDER BY admin_message_time DESC
     </select>
     <!--3.添加管理员通知-->
     <insert id="insertAdminMessage" parameterType="AdminMessage">
