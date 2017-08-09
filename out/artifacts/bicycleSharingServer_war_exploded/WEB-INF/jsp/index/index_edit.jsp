@@ -38,21 +38,21 @@
                                 <form autocomplete="off" class="am-form tpl-form-line-form" action="${pageContext.request.contextPath }/admin-index-edit-execute" method="post">
                                     <input type="hidden" name="id" value="${sessionScope.admin.adminId }">
                                     <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">管理员名 </label>
+                                        <label class="am-u-sm-3 am-form-label">管理员名 </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="name" value="${sessionScope.admin.adminName }">
+                                            <input type="text" readonly="readonly" class="tpl-form-input" name="name" value="${sessionScope.admin.adminName }">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">密码</label>
+                                        <label class="am-u-sm-3 am-form-label">密码</label>
                                         <div class="am-u-sm-9">
                                             <input type="password" class="tpl-form-input" name="password" value="${sessionScope.admin.adminPassword }">
                                         </div>
                                     </div>     
                                     <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">邮箱 </label>
+                                        <label class="am-u-sm-3 am-form-label">邮箱 </label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" name="email" value="${sessionScope.admin.adminEmail }">
+                                            <input type="email" class="tpl-form-input" name="email" value="${sessionScope.admin.adminEmail }">
                                         </div>
                                     </div>
                                     <div class="am-form-group">

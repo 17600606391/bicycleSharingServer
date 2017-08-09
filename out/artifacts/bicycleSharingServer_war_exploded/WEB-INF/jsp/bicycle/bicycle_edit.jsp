@@ -40,27 +40,27 @@
                                 <div class="am-form-group">
                                     <label for="bicycle-id" class="am-u-sm-3 am-form-label">单车编号</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-id" placeholder="" name="id" value="${requestScope.bicycle.bicycleId}">
+                                        <input type="text" readonly="readonly" class="tpl-form-input" id="bicycle-id" placeholder="" name="id" value="${requestScope.bicycle.bicycleId}">
                                     </div>
                                 </div>
                                 <div class="am-form-group">
                                     <label for="bicycle-x" class="am-u-sm-3 am-form-label">单车经度</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-x" placeholder="" name="bicycleCurrentX" value="${requestScope.bicycle.bicycleCurrentX}">
+                                        <input type="number" step="0.000001" max="180" min="0" class="tpl-form-input" id="bicycle-x" placeholder="" name="bicycleCurrentX" value="${requestScope.bicycle.bicycleCurrentX}">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="bicycle-y" class="am-u-sm-3 am-form-label">单车纬度</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-y" placeholder="" name="bicycleCurrentY" value="${requestScope.bicycle.bicycleCurrentY}">
+                                        <input type="number" step="0.000001" max="90" min="0" class="tpl-form-input" id="bicycle-y" placeholder="" name="bicycleCurrentY" value="${requestScope.bicycle.bicycleCurrentY}">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="bicycle-statement" class="am-u-sm-3 am-form-label">单车状态</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-statement" placeholder="" name="bicycleStatement" value="${requestScope.bicycle.bicycleStatement }">
+                                        <input type="number" max="1" min="-1" class="tpl-form-input" id="bicycle-statement" placeholder="" name="bicycleStatement" value="${requestScope.bicycle.bicycleStatement }">
                                     </div>
                                 </div>
                                 <div class="am-form-group">

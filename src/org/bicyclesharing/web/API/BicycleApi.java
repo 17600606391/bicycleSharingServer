@@ -29,17 +29,19 @@ public class BicycleApi {
         ArrayList<Bicycle> bicycles = (ArrayList<Bicycle>) bicycleService.getBicycleByLocation(bicycleCurrentX, bicycleCurrentY);
         return bicycles;
     }
-/**
- * 2.获取不同状态车辆的经纬度
- */
+
+    /**
+     * 2.获取不同状态车辆的经纬度
+     */
     @RequestMapping(value = "api-bicycle-getX/{bicycleStatement}")
     @ResponseBody
-    public Double[] getXByStatement(@PathVariable("bicycleStatement")Integer bicycleStatement){
+    public Double[] getXByStatement(@PathVariable("bicycleStatement") Integer bicycleStatement) {
         return bicycleService.getBicycleCurrentXByStatement(bicycleStatement);
     }
+
     @RequestMapping(value = "api-bicycle-getY/{bicycleStatement}")
     @ResponseBody
-    public Double[] getYByStatement(@PathVariable("bicycleStatement")Integer bicycleStatement){
+    public Double[] getYByStatement(@PathVariable("bicycleStatement") Integer bicycleStatement) {
         return bicycleService.getBicycleCurrentYByStatement(bicycleStatement);
     }
 }

@@ -39,28 +39,28 @@
                                 <div class="am-form-group">
                                     <label for="bicycle-x" class="am-u-sm-3 am-form-label">位置经度</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-x" placeholder="" name="bicycleCurrentX">
+                                        <input type="number" step="0.000001" max="180" min="0" class="tpl-form-input" id="bicycle-x" placeholder="" name="bicycleCurrentX">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="bicycle-y" class="am-u-sm-3 am-form-label">位置纬度</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-y" placeholder="" name="bicycleCurrentY">
+                                        <input type="number" step="0.000001" max="90" min="0"  class="tpl-form-input" id="bicycle-y" placeholder="" name="bicycleCurrentY">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="bicycle-statement" class="am-u-sm-3 am-form-label">单车状态</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-statement" placeholder="" name="bicycleStatement">
+                                        <input type="number" max="1" min="-1" class="tpl-form-input" id="bicycle-statement" placeholder="" name="bicycleStatement">
                                     </div>
                                 </div>
 
                                 <div class="am-form-group">
                                     <label for="bicycle-n" class="am-u-sm-3 am-form-label">添加数量</label>
                                     <div class="am-u-sm-9">
-                                        <input type="text" class="tpl-form-input" id="bicycle-n" placeholder="" name="n">
+                                        <input type="number" min="1" class="tpl-form-input" id="bicycle-n" placeholder="" name="n">
                                     </div>
                                 </div>
                                 <div class="am-form-group">

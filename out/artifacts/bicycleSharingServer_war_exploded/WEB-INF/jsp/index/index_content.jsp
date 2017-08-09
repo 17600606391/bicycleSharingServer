@@ -44,7 +44,7 @@
                 <div class="am-u-sm-12 am-u-md-12 am-u-lg-4">
                     <div class="widget am-cf">
                         <div class="widget-head am-cf">
-                            <div class="widget-title am-fl">相关数据检索</div>
+                            <div class="widget-title am-fl">实时数据信息</div>
                             <div class="widget-function am-fr">
                             </div>
                         </div>

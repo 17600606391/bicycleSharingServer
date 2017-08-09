@@ -4,7 +4,7 @@ var map = new AMap.Map('container', {
     center: [118.642371, 32.036997]
 });
 
-// 请求地址
+// 请求地址(局域网地址)
 var url='http://192.168.32.73:8080/';
 var greenX = url+'api-bicycle-getX/1';
 var greenY = url+'api-bicycle-getY/1';

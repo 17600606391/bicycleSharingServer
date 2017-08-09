@@ -15,6 +15,7 @@
     <select id="selectAllRecharge" resultType="Recharge">
         SELECT *
         FROM recharge
+        ORDER BY recharge_id DESC
     </select>
     <!--4.根据id查询一条充值记录-->
     <select id="selectRechargeById" resultType="Recharge">

@@ -31,7 +31,7 @@
 
                     </div>
                     <div class="am-form-group">
-                        <input type="text" class="tpl-form-input" placeholder="邮箱" name="email">
+                        <input type="email" class="tpl-form-input" placeholder="邮箱" name="email">
                     </div>
                     <div class="am-form-group">
                         <input type="password" class="tpl-form-input" placeholder="请输入密码" name="password">

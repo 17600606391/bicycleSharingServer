@@ -73,10 +73,10 @@
                                 <div class="am-u-lg-12 am-cf" style="font-size:14px;">
                                     <div class="am-fr">
                                         <ul class="am-pagination tpl-pagination">
-                                            <li><a href="${pageContext.request.contextPath }/admin-admin-message-show?page=${requestScope.pagePoint - 1 }">«</a></li>
+                                            <li><a href="${pageContext.request.contextPath }/admin-feedback-list-show?page=${requestScope.pagePoint - 1 }">«</a></li>
                                             <li><a>当前第${requestScope.pagePoint }页(共${requestScope.pageMax }页)</a></li>
                                             <li><a href="#!" id="skipBtn"> 跳转到&nbsp;<input type="text" name="pagePoint" style="width:20px;height: 14px; color:black; font-size: 10px;">&nbsp;页</a></li>
-                                            <li><a href="${pageContext.request.contextPath }/admin-admin-message-show?page=${requestScope.pagePoint + 1 }">»</a></li>
+                                            <li><a href="${pageContext.request.contextPath }/admin-feedback-list-show?page=${requestScope.pagePoint + 1 }">»</a></li>
                                         </ul>
                                     </div>
                                 </div>

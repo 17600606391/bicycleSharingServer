@@ -1,4 +1,4 @@
--- MySQL DATABASE
+﻿-- MySQL DATABASE
 -- version 5.7.17
 -- Host:localhost port:3306
 -- database:bicycle_sharing
@@ -26,9 +26,7 @@ CREATE TABLE user (
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8
   COMMENT '用户表';
--- 删除password列
-ALTER TABLE bicycle_sharing.user
-  DROP user_password;
+
 -- 3.创建管理员表admin
 CREATE TABLE admin (
   admin_id       INT(11)      NOT NULL
@@ -45,9 +43,9 @@ CREATE TABLE admin (
   DEFAULT CHARSET = utf8
   COMMENT '管理员表';
 
--- 4.插入管理员信息,自增从1开始,在程序里不进行删除,只进行无效的删除,或者删除非自增的插入数据
+-- 4.插入管理员信息,自增从1开始,在程序里不进行删除,只进行无效的删除,或者删除非自增的插入数据(密码是123456,这里是加密好的)
 INSERT INTO
-  admin VALUES (0, 'huija', '123456', '1150555483@qq.com');
+  admin VALUES (0, 'huija', 'e10adc3949ba59abbe56e057f20f883e', '1150555483@qq.com');
 
 -- 5.创建管理员通知表admin_message
 CREATE TABLE admin_message (
@@ -81,7 +79,7 @@ CREATE TABLE bicycle (
   COMMENT '单车经度',
   bicycle_current_y DOUBLE    NOT NULL
   COMMENT '单车纬度',
-  bicycle_last_time TIMESTAMP NOT NULL
+  bicycle_last_time DATETIME NOT NULL
   COMMENT '最后一次归还时间',
   bicycle_statement VARCHAR(32) DEFAULT '可用'
   COMMENT '单车状况',

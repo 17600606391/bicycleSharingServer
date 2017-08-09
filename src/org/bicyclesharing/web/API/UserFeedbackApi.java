@@ -31,11 +31,11 @@ public class UserFeedbackApi {
     public String addUserfeedback(@PathVariable("userName") String userName, @PathVariable("bicycleId") Integer bicycleId,
                                   @PathVariable("feedbackTitle") String feedbackTitle, @PathVariable("feedbackContent") String feedbackContent)
             throws UnsupportedEncodingException {
-        if (userName == null || bicycleId == null || feedbackTitle == null || feedbackContent == null) {
-            return "0";
+        if ("".equals(userName)|| "".equals(feedbackTitle)|| "".equals(feedbackContent)) {
+            return "0";//用户不存在或者输入为空
         } else {
             User user = userService.getUserByName(userName);
-            //中文参数乱码
+            //url中文参数乱码(还有长度限制,具体还要去tomcat进行设置)
             byte title[];
             byte content[];
             title = feedbackTitle.getBytes("ISO-8859-1");
@@ -44,13 +44,13 @@ public class UserFeedbackApi {
             feedbackContent=new String(content,"UTF-8");
             UserFeedback userFeedback = new UserFeedback(feedbackTitle, feedbackContent, user.getUserId(), bicycleId, new Date(), 0);
             if (userFeedback == null) {
-                return "0";
+                return "0";//反馈对象创建失败
             } else {
                 boolean addUserFeedback = userFeedbackService.addFeedback(userFeedback);
                 if (addUserFeedback) {
                     return "1";
                 } else {
-                    return "0";
+                    return "0";//反馈失败
                 }
             }
         }

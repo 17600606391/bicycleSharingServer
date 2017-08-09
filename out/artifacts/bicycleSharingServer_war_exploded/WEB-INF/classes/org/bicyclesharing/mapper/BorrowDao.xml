@@ -16,6 +16,7 @@
     <select id="selectAllBorrow" resultType="Borrow">
         SELECT *
         FROM borrow
+        ORDER BY borrow_id DESC
             <!--JOIN user ON user.user_id = borrow.user_id
             JOIN bicycle ON bicycle.bicycle_id = borrow.bicycle_id-->
     </select>

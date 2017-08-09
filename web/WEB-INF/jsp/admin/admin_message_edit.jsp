@@ -41,8 +41,8 @@
                                     <div class="am-form-group">
                                         <label for="user-name" class="am-u-sm-3 am-form-label">标题 <span class="tpl-form-line-small-title">Title</span></label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入标题文字" name="title" value="${requestScope.adminMessage.adminMessageTitle}">
-                                            <small>请填写标题文字10-20字左右。</small>
+                                            <input type="text" max="20" class="tpl-form-input" id="user-name" placeholder="请输入标题文字" name="title" value="${requestScope.adminMessage.adminMessageTitle}">
+                                            <small>请填写标题文字20字以内。</small>
                                         </div>
                                     </div>
                                     <div class="am-form-group">

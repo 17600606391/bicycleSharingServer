@@ -126,7 +126,7 @@
     <column id="34" parent="15" name="bicycle_last_time">
       <Position>4</Position>
       <Comment>最后一次归还时间</Comment>
-      <DataType>timestamp|0</DataType>
+      <DataType>datetime|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
