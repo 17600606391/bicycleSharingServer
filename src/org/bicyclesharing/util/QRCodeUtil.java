@@ -164,7 +164,7 @@ public class QRCodeUtil {
    
    
     public static void main(String[] args) throws Exception {
-        String text = "bicycle-mate-bicycle-borrow:2";
+        String text = "000010";
         QRCodeUtil.encode(text, "web/borrowCodeImage", true, 10);
     }
    
