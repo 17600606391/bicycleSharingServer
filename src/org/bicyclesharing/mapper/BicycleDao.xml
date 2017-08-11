@@ -38,8 +38,8 @@
     <select id="selectBicycleByLocation" resultType="Bicycle">
         SELECT *
         FROM bicycle
-        WHERE bicycle_current_x > #{bicycleCurrentX} - 0.001 AND bicycle_current_x<![CDATA[ <]]> #{bicycleCurrentX} + 0.001
-              AND bicycle_current_y > #{bicycleCurrentY} - 0.001 AND bicycle_current_y<![CDATA[ <]]> #{bicycleCurrentY} + 0.001
+        WHERE bicycle_current_x > #{bicycleCurrentX} - 0.01 AND bicycle_current_x<![CDATA[ <]]> #{bicycleCurrentX} + 0.01
+              AND bicycle_current_y > #{bicycleCurrentY} - 0.01 AND bicycle_current_y<![CDATA[ <]]> #{bicycleCurrentY} + 0.01
     </select>
     <!--8.根据车辆状况查询单车-->
     <select id="selectBicycleByStatement" resultType="Bicycle" parameterType="Integer">

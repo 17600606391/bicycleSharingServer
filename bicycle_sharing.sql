@@ -9,15 +9,15 @@
 CREATE DATABASE bicycle_sharing;
 -- 2.创建用户表user
 CREATE TABLE user (
-  user_id       INT(11)     NOT NULL
+  user_id      INT(11)     NOT NULL
   COMMENT '用户id',
-  user_name     VARCHAR(64) NOT NULL
+  user_name    VARCHAR(64) NOT NULL
   COMMENT '用户手机号',
-  user_account  DECIMAL(9, 2) DEFAULT 0
+  user_account DECIMAL(9, 2) DEFAULT 0
   COMMENT '余额',
-  user_credit   INT           DEFAULT 80
+  user_credit  INT           DEFAULT 80
   COMMENT '信用度',
-  user_cash     INT           DEFAULT 0
+  user_cash    INT           DEFAULT 0
   COMMENT '押金',
   PRIMARY KEY (user_id),
   CHECK (user_credit >= 0 AND user_credit <= 100),
@@ -55,7 +55,7 @@ CREATE TABLE admin_message (
   COMMENT '管理员通知标题',
   admin_message_content TEXT         NOT NULL
   COMMENT '管理员通知内容',
-  admin_message_time    TIMESTAMP     NOT NULL
+  admin_message_time    TIMESTAMP    NOT NULL
   COMMENT '发布时间',
   admin_id              INT(11)      NOT NULL
   COMMENT '发布管理员id',
@@ -73,11 +73,11 @@ INSERT INTO
 
 -- 7.创建自行车表
 CREATE TABLE bicycle (
-  bicycle_id        INT(11)   NOT NULL
+  bicycle_id        INT(11)  NOT NULL
   COMMENT '单车id',
-  bicycle_current_x DOUBLE    NOT NULL
+  bicycle_current_x DOUBLE   NOT NULL
   COMMENT '单车经度',
-  bicycle_current_y DOUBLE    NOT NULL
+  bicycle_current_y DOUBLE   NOT NULL
   COMMENT '单车纬度',
   bicycle_last_time DATETIME NOT NULL
   COMMENT '最后一次归还时间',
@@ -191,5 +191,6 @@ CREATE TABLE user_feedback (
   PRIMARY KEY (feedback_id)
 )
   ENGINE = InnoDB
+  AUTO_INCREMENT = 10
   DEFAULT CHARSET = utf8
   COMMENT '用户反馈表'

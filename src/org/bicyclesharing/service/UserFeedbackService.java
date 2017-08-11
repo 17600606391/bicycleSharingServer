@@ -24,4 +24,9 @@ public interface UserFeedbackService {
      * 3.反馈已读(修改状态为1)
      */
     boolean resolved(Integer feedbackId);
+
+    /**
+     * 4.删除用户反馈
+     */
+    boolean removeFeedback(Integer feedbackId);
 }

@@ -55,4 +55,14 @@ public class UserFeedbackServiceImpl implements UserFeedbackService {
         }
     }
 
+    @Override
+    public boolean removeFeedback(Integer feedbackId) {
+        if (feedbackId <= 0 || "".equals(feedbackId)) {
+            return false;
+        } else {
+            userFeedbackDao.deleteUserFeedbackById(feedbackId);
+            return true;
+        }
+    }
+
 }

@@ -62,6 +62,10 @@
                                                 <a href="${pageContext.request.contextPath}/admin-userFeedback-resolved-execute/${userFeedbacks.feedbackId}">
                                                     <i class="am-icon-book"></i> 已读
                                                 </a>
+                                                <a href="admin-userFeedback-removeuser-execute/${userFeedbacks.feedbackId}"
+                                                   class="tpl-table-black-operation-del">
+                                                    <i class="am-icon-trash"></i> 删除
+                                                </a>
                                             </div>
                                         </td>
                                         </tr>
