@@ -91,12 +91,12 @@ public class BorrowApi {
     }
 
     /**
-     * 3.查询借车记录api
+     * 3.查询当前(最后一条)借车记录api(真的蠢,当初为什么要根据车id查询最后一条记录)
      */
-    @RequestMapping(value = "api-borrow-queryBorrow/{userName}")
+    @RequestMapping(value = "api-borrow-currentBorrow/{userName}")
     @ResponseBody
-    public ArrayList<Borrow> queryBorrow(@PathVariable("userName") String userName) {
+    public Borrow currentBorrow(@PathVariable("userName") String userName) {
         ArrayList<Borrow> borrows = (ArrayList<Borrow>) borrowService.getBorrowByUserId(userService.getUserByName(userName).getUserId());
-        return borrows;
+        return borrows.get(borrows.size()-1);
     }
 }
