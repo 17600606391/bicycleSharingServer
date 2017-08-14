@@ -6,12 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e403e03-4ad7-4819-9038-0932cc977886" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/后台api文档.docx" afterPath="$PROJECT_DIR$/后台api文档.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Arquillian_JUnit_Release.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/bicyclesharing/web/API/BorrowApi.java" afterPath="$PROJECT_DIR$/src/org/bicyclesharing/web/API/BorrowApi.java" />
-    </list>
+    <list default="true" id="6e403e03-4ad7-4819-9038-0932cc977886" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,9 +64,9 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="JUnit4 Test Class" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -105,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/org/bicyclesharing/service/BicycleService.java" />
-        <option value="$PROJECT_DIR$/src/org/bicyclesharing/service/impl/BicycleServiceImpl.java" />
         <option value="$PROJECT_DIR$/Test/org/bicyclesharing/service/BicycleServiceTest.java" />
         <option value="$PROJECT_DIR$/src/org/bicyclesharing/service/UserFeedBack.java" />
         <option value="$PROJECT_DIR$/src/org/bicyclesharing/service/UserFeedBackService.java" />
@@ -156,6 +149,8 @@
         <option value="$PROJECT_DIR$/src/org/bicyclesharing/dao/BorrowDao.java" />
         <option value="$PROJECT_DIR$/src/org/bicyclesharing/service/BorrowService.java" />
         <option value="$PROJECT_DIR$/src/org/bicyclesharing/web/API/BorrowApi.java" />
+        <option value="$PROJECT_DIR$/Test/org/bicyclesharing/util/DateExchangeTest.java" />
+        <option value="$PROJECT_DIR$/src/org/bicyclesharing/util/DateExchange.java" />
       </list>
     </option>
   </component>
@@ -242,6 +237,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicycleSharingServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicycleSharingServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicyclesharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicycleSharingServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicycleSharingServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicycleSharingServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicycleSharingServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bicyclesharing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -262,6 +307,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bicyclesharing.util" />
       <recent name="org.bicyclesharing.service" />
       <recent name="org.bicyclesharing.dao" />
       <recent name="org.bicyclesharing.service.impl" />
@@ -304,104 +350,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.78">
-    <configuration default="false" name="UserFeedbackServiceTest.getAllFeedback" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.bicyclesharing.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="bicycleSharingServer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.bicyclesharing.service" />
-      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.service.UserFeedbackServiceTest" />
-      <option name="METHOD_NAME" value="getAllFeedback" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserFeedbackServiceTest.resolved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.bicyclesharing.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="bicycleSharingServer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.bicyclesharing.service" />
-      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.service.UserFeedbackServiceTest" />
-      <option name="METHOD_NAME" value="resolved" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="AdminMessageDaoTest.insertAdminMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.bicyclesharing.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="bicycleSharingServer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.bicyclesharing.dao" />
-      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.dao.AdminMessageDaoTest" />
-      <option name="METHOD_NAME" value="insertAdminMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="QRCodeUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="org.bicyclesharing.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.util.QRCodeUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="bicycleSharingServer" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="UserFeedbackServiceTest.removeFeedback" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -416,6 +364,110 @@
       <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.service.UserFeedbackServiceTest" />
       <option name="METHOD_NAME" value="removeFeedback" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DateExchangeTest.dateToStamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.bicyclesharing.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bicycleSharingServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bicyclesharing.util" />
+      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.util.DateExchangeTest" />
+      <option name="METHOD_NAME" value="dateToStamp" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DateExchangeTest.stampToDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.bicyclesharing.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bicycleSharingServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bicyclesharing.util" />
+      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.util.DateExchangeTest" />
+      <option name="METHOD_NAME" value="stampToDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DateExchangeTest.stampToStringDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.bicyclesharing.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bicycleSharingServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bicyclesharing.util" />
+      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.util.DateExchangeTest" />
+      <option name="METHOD_NAME" value="stampToStringDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="DateExchangeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.bicyclesharing.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bicycleSharingServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.bicyclesharing.util" />
+      <option name="MAIN_CLASS_NAME" value="org.bicyclesharing.util.DateExchangeTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -899,19 +951,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat 7.0.78" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.getAllFeedback" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.resolved" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AdminMessageDaoTest.insertAdminMessage" />
-      <item index="4" class="java.lang.String" itemvalue="Application.QRCodeUtil" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.removeFeedback" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.removeFeedback" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.DateExchangeTest.dateToStamp" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DateExchangeTest.stampToDate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DateExchangeTest.stampToStringDate" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DateExchangeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.removeFeedback" />
-        <item index="1" class="java.lang.String" itemvalue="Application.QRCodeUtil" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.resolved" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AdminMessageDaoTest.insertAdminMessage" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.getAllFeedback" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DateExchangeTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DateExchangeTest.stampToDate" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DateExchangeTest.stampToStringDate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DateExchangeTest.dateToStamp" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserFeedbackServiceTest.removeFeedback" />
       </list>
     </recent_temporary>
   </component>
@@ -980,44 +1032,44 @@
       <workItem from="1502621898132" duration="245000" />
       <workItem from="1502672211956" duration="3135000" />
       <workItem from="1502677001019" duration="750000" />
-      <workItem from="1502688324140" duration="1902000" />
+      <workItem from="1502688324140" duration="5025000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdminMessageDaoTest_insertAdminMessage - 2017.08.07 at 10h 08m 10s.xml">
-      <configuration name="AdminMessageDaoTest.insertAdminMessage" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest - 2017.08.14 at 15h 05m 01s.xml">
+      <configuration name="DateExchangeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_removeFeedback - 2017.08.14 at 09h 10m 35s.xml">
-      <configuration name="UserFeedbackServiceTest.removeFeedback" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_dateToStamp - 2017.08.14 at 14h 49m 57s.xml">
+      <configuration name="DateExchangeTest.dateToStamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 09h 42m 17s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_dateToStamp - 2017.08.14 at 14h 52m 36s.xml">
+      <configuration name="DateExchangeTest.dateToStamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 09h 51m 34s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_dateToStamp - 2017.08.14 at 14h 55m 24s.xml">
+      <configuration name="DateExchangeTest.dateToStamp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 09h 53m 19s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_stampToDate - 2017.08.14 at 14h 56m 40s.xml">
+      <configuration name="DateExchangeTest.stampToDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 09h 53m 41s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_stampToDate - 2017.08.14 at 14h 57m 54s.xml">
+      <configuration name="DateExchangeTest.stampToDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 09h 58m 10s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_stampToDate - 2017.08.14 at 14h 59m 07s.xml">
+      <configuration name="DateExchangeTest.stampToDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 09h 59m 50s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_stampToDate - 2017.08.14 at 15h 00m 02s.xml">
+      <configuration name="DateExchangeTest.stampToDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 10h 06m 20s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_stampToDate - 2017.08.14 at 15h 02m 06s.xml">
+      <configuration name="DateExchangeTest.stampToDate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserFeedbackServiceTest_resolved - 2017.08.07 at 10h 09m 13s.xml">
-      <configuration name="UserFeedbackServiceTest.resolved" configurationId="JUnit" />
+    <history-entry file="DateExchangeTest_stampToStringDate - 2017.08.14 at 15h 02m 01s.xml">
+      <configuration name="DateExchangeTest.stampToStringDate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="314986000" />
+    <option name="totallyTimeSpent" value="318109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1039,7 +1091,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1354009" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1051,10 +1103,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29082426" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32419354" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20121029" sideWeight="0.489533" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14568081" sideWeight="0.489533" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24281392" sideWeight="0.50913244" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.204236" sideWeight="0.510467" order="7" side_tool="true" content_ui="tabs" />
@@ -1082,7 +1134,7 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1091,32 +1143,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/jsp/index/index_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bicyclesharing/web/Controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="84" column="1" lean-forward="false" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1f8836a/1bb0c4f9-339c-4c5a-97bb-04344b1df02c/bicycle_sharing.admin">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/360软件管家/Tomcat/7.0/lib/servlet-api.jar!/javax/servlet/http/HttpServletRequest.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
@@ -1305,13 +1331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/bicyclesharing/util/QRCodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="167" column="63" lean-forward="false" selection-start-line="167" selection-start-column="63" selection-end-line="167" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/borrowCodeImage/10.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1481,6 +1500,42 @@
         <state relative-caret-position="166">
           <caret line="93" column="50" lean-forward="false" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bicyclesharing/util/BufferedImageLuminanceSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1681">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bicyclesharing/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="167" column="63" lean-forward="false" selection-start-line="167" selection-start-column="63" selection-end-line="167" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/bicyclesharing/util/DateExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-679">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/org/bicyclesharing/util/DateExchangeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
