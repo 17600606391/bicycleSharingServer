@@ -59,4 +59,9 @@ public class UserFeedbackServiceTest {
     public void resolved() throws Exception {
         System.out.println(userFeedbackService.resolved(1));
     }
+
+    @Test
+    public void removeFeedback() throws Exception {
+        System.out.println(userFeedbackService.removeFeedback(1));
+    }
 }
