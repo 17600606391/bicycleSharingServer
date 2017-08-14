@@ -1,7 +1,9 @@
 package org.bicyclesharing.web.API;
 
+import org.bicyclesharing.entities.Bicycle;
 import org.bicyclesharing.entities.User;
 import org.bicyclesharing.entities.UserFeedback;
+import org.bicyclesharing.service.BicycleService;
 import org.bicyclesharing.service.UserFeedbackService;
 import org.bicyclesharing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ public class UserFeedbackApi {
     private UserFeedbackService userFeedbackService;
     @Autowired
     private UserService userService;
+    @Autowired
+    private BicycleService bicycleService;
 
     /**
      * 1.插入一条用户反馈
@@ -31,20 +35,20 @@ public class UserFeedbackApi {
     public String addUserfeedback(@PathVariable("userName") String userName, @PathVariable("bicycleId") Integer bicycleId,
                                   @PathVariable("feedbackTitle") String feedbackTitle, @PathVariable("feedbackContent") String feedbackContent)
             throws UnsupportedEncodingException {
-        if ("".equals(userName)|| "".equals(feedbackTitle)|| "".equals(feedbackContent)) {
-            return "0";//用户不存在或者输入为空
+        if ( "".equals(feedbackTitle)|| "".equals(feedbackContent)) {
+            return "-1";//输入为空(虽然输入为空根本传不过来,但还是要写一下的...)
         } else {
+            Bicycle bicycle=bicycleService.getBicycleById(bicycleId);
+            if (bicycle==null){
+                return "-2";//车辆不存在
+            }
             User user = userService.getUserByName(userName);
-            //url中文参数乱码(还有长度限制,具体还要去tomcat进行设置)
-            byte title[];
-            byte content[];
-            title = feedbackTitle.getBytes("ISO-8859-1");
-            content = feedbackContent.getBytes("ISO-8859-1");
-            feedbackTitle=new String(title,"UTF-8");
-            feedbackContent=new String(content,"UTF-8");
+            /*//url中文参数乱码(这样也能解决,但是个别,不很多汉字都没有前一个编码,所以问题大大的,最好去server.xml修改一下)
+            feedbackTitle=new String(feedbackTitle.getBytes("ISO-8859-1"),"UTF-8");
+            feedbackContent=new String(feedbackContent.getBytes("ISO-8859-1"),"UTF-8");*/
             UserFeedback userFeedback = new UserFeedback(feedbackTitle, feedbackContent, user.getUserId(), bicycleId, new Date(), 0);
             if (userFeedback == null) {
-                return "0";//反馈对象创建失败
+                return "-3";//反馈对象创建失败
             } else {
                 boolean addUserFeedback = userFeedbackService.addFeedback(userFeedback);
                 if (addUserFeedback) {

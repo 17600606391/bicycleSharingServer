@@ -54,7 +54,7 @@
                                         <td class="am-text-middle">${userFeedbacks.feedbackContent }</td>
                                         <td class="am-text-middle">${userFeedbacks.bicycleId }</td>
                                         <td class="am-text-middle">
-                                            <fmt:formatDate value="${userFeedbacks.feedbackTime }" pattern="yyyy-MM-dd hh:mm"/>
+                                            <fmt:formatDate value="${userFeedbacks.feedbackTime }" type="both"/>
                                         </td>
                                         <td class="am-text-middle">${userFeedbacks.feedbackStatement }</td>
                                         <td class="am-text-middle">
