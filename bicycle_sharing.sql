@@ -146,32 +146,32 @@ CREATE TABLE borrow (
 ALTER TABLE admin
   MODIFY admin_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '管理员id',
-  AUTO_INCREMENT = 10;
+  AUTO_INCREMENT = 1;
 -- admin_message
 ALTER TABLE admin_message
   MODIFY admin_message_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '管理员通知id',
-  AUTO_INCREMENT = 10;
+  AUTO_INCREMENT = 1;
 -- user
 ALTER TABLE user
   MODIFY user_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '用户id',
-  AUTO_INCREMENT = 10;
+  AUTO_INCREMENT = 1;
 -- bicycle
 ALTER TABLE bicycle
   MODIFY bicycle_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '单车id',
-  AUTO_INCREMENT = 10;
+  AUTO_INCREMENT = 1;
 -- borrow
 ALTER TABLE borrow
   MODIFY borrow_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '管理员通知id',
-  AUTO_INCREMENT = 10;
+  AUTO_INCREMENT = 1;
 -- recharge
 ALTER TABLE recharge
   MODIFY recharge_id INT(11) NOT NULL AUTO_INCREMENT
   COMMENT '管理员通知id',
-  AUTO_INCREMENT = 10;
+  AUTO_INCREMENT = 1;
 -- 11.创建用户反馈表
 CREATE TABLE user_feedback (
   feedback_id        INT(11)     NOT NULL AUTO_INCREMENT
@@ -191,6 +191,6 @@ CREATE TABLE user_feedback (
   PRIMARY KEY (feedback_id)
 )
   ENGINE = InnoDB
-  AUTO_INCREMENT = 10
+  AUTO_INCREMENT = 1
   DEFAULT CHARSET = utf8
   COMMENT '用户反馈表'

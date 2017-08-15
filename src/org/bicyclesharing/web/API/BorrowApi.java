@@ -97,6 +97,8 @@ public class BorrowApi {
     @ResponseBody
     public Borrow currentBorrow(@PathVariable("userName") String userName) {
         ArrayList<Borrow> borrows = (ArrayList<Borrow>) borrowService.getBorrowByUserId(userService.getUserByName(userName).getUserId());
-        return borrows.get(borrows.size()-1);
+        if (borrows.size() >= 1) {
+            return borrows.get(borrows.size() - 1);
+        } else return null;
     }
 }
