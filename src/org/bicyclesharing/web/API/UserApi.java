@@ -1,7 +1,6 @@
 package org.bicyclesharing.web.API;
 
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import org.bicyclesharing.entities.Borrow;
 import org.bicyclesharing.entities.Recharge;
 import org.bicyclesharing.entities.User;
@@ -195,6 +194,24 @@ public class UserApi {
             } else {
                 return "0";
             }
+        }
+    }
+
+    /**
+     * 12.修改用户信用的api
+     * @param x
+     * @param userName
+     * @return
+     */
+    @RequestMapping(value = "api-user-changeUserCredit/{x}/{userName}")
+    @ResponseBody
+    public String changeUserCredit(@PathVariable("x") Integer x, @PathVariable("userName") String userName) {
+        User user = userService.getUserByName(userName);
+        if (user == null) {
+            return "-1";
+        } else {
+            userService.editUser(user.getUserName(), user.getUserAccount(), user.getUserCredit(), user.getUserCash());
+            return "1";
         }
     }
 }

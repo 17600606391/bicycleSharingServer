@@ -5,4 +5,7 @@ package org.bicyclesharing.web.API;
  * Created by HuiJa on 2017/7/31.
  */
 public class ScanApi {
+    /**
+     * TODO 扫码相关api
+     */
 }
