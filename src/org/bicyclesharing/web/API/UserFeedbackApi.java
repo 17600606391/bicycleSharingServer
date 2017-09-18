@@ -1,4 +1,4 @@
-package org.bicyclesharing.web.API;
+﻿package org.bicyclesharing.web.API;
 
 import org.bicyclesharing.entities.Bicycle;
 import org.bicyclesharing.entities.User;
@@ -43,7 +43,8 @@ public class UserFeedbackApi {
                 return "-2";//车辆不存在
             }
             User user = userService.getUserByName(userName);
-            /*//url中文参数乱码(这样也能解决,但是个别,不很多汉字都没有前一个编码,所以问题大大的,最好去server.xml修改一下)
+            /*url中文参数传递过来乱码(这样也能解决,但是不知道为什么个别汉字会引发404错误,
+			所以弄到这的需要去Tomcat的server.xml修改一下默认编码格式ISO-8859-1,改成utf-8)
             feedbackTitle=new String(feedbackTitle.getBytes("ISO-8859-1"),"UTF-8");
             feedbackContent=new String(feedbackContent.getBytes("ISO-8859-1"),"UTF-8");*/
             UserFeedback userFeedback = new UserFeedback(feedbackTitle, feedbackContent, user.getUserId(), bicycleId, new Date(), 0);
