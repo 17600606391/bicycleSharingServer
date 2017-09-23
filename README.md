@@ -19,6 +19,6 @@ http://59.110.238.9:8080/bicycleSharingServer_war/api-borrow-borrowBicycle/车�
 如果无法访问页面,请邮件zhj3212j@outlook.com开启,有时服务器会异常关闭
 
 # 关于exe文件
-是直接双击上传到github的小程序,中间要按几次回车.缺点:上传统一备注为"小改动",大的改动请自行敲命令行.
+是直接双击同步项目到github的小程序,中间要按几次回车.缺点:commit统一备注为"小改动",大的改动请自行敲命令行.
 
 请原谅一个这么懒的人,懒得写readme,懒得去敲命令行.
