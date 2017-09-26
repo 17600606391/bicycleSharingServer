@@ -1,11 +1,12 @@
+//引入地图,坐标中心自己定
 var map = new AMap.Map('container', {
     resizeEnable: true,
     zoom: 20,
     center: [118.642371, 32.036997]
 });
 
-// 请求地址(局域网地址)
-var url='http://192.168.32.73:8080/';
+// 请求地址(记得改为局域网地址,localhost只在本机可以看见点)
+var url='http://localhost:8080/';
 var greenX = url+'api-bicycle-getX/1';
 var greenY = url+'api-bicycle-getY/1';
 var redX = url+'api-bicycle-getX/-1';

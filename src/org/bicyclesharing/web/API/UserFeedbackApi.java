@@ -1,4 +1,4 @@
-﻿package org.bicyclesharing.web.API;
+package org.bicyclesharing.web.API;
 
 import org.bicyclesharing.entities.Bicycle;
 import org.bicyclesharing.entities.User;
