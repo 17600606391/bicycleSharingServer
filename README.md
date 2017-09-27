@@ -26,3 +26,6 @@ http://59.110.238.9:8080/bicycleSharingServer_war/api-borrow-borrowBicycle/车�
 是直接双击同步项目到github的小程序,中间要按几次回车.缺点:commit统一备注为"小改动",大的改动请自行敲命令行.
 
 请原谅一个这么懒的人,懒得写readme,懒得去敲命令行.
+
+# 初学者的建议
+我的Test里面是ssm的demo,而且还用的是maven管理的,可以先去看下那个,顺路可以学下maven
