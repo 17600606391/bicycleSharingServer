@@ -7,6 +7,7 @@
 
 -- 1.创建数据库bicycle_sharing
 CREATE DATABASE bicycle_sharing;
+use bicycle_sharing;
 -- 2.创建用户表user
 CREATE TABLE user (
   user_id      INT(11)     NOT NULL
@@ -45,7 +46,7 @@ CREATE TABLE admin (
 
 -- 4.插入管理员信息,自增从1开始,在程序里不进行删除,只进行无效的删除,或者删除非自增的插入数据(密码是123456,这里是加密好的)
 INSERT INTO
-  admin VALUES (0, 'huija', 'e10adc3949ba59abbe56e057f20f883e', '1150555483@qq.com');
+  admin VALUES (0, 'root', 'e10adc3949ba59abbe56e057f20f883e', '1150555483@qq.com');
 
 -- 5.创建管理员通知表admin_message
 CREATE TABLE admin_message (
@@ -92,7 +93,10 @@ CREATE TABLE bicycle (
 ALTER TABLE bicycle_sharing.bicycle
   MODIFY bicycle_statement INT(11) NOT NULL DEFAULT '1'
   COMMENT '单车状况';
+-- 添加车辆
 
+INSERT INTO
+bicycle VALUES (0, 118.642371, 32.036997, now(), 1);
 -- 8.创建充值记录表
 CREATE TABLE recharge (
   recharge_id     INT(11)       NOT NULL
